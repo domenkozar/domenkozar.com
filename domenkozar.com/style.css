@@ -1,0 +1,77 @@
+html, body {
+    font: 13px/1.5 "Ubuntu", "Georgia", "Helvetica Neue", "Helvetica", "Times New Roman", sans-serif;
+    height: 100%;
+}
+em, i {
+    font-style: italic;
+}
+b, strong {
+    font-weight: bold;
+}
+a {
+    color: #000;
+    text-decoration: underline;
+}
+h2 {
+    font: 3em 'Cabin', "Georgia";
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
+}
+h2 a {
+    color: #000;
+    text-decoration: none;
+}
+#logo {
+    float: left;
+}
+#logo a {
+    text-decoration: none;
+}
+#logo strong {
+    font: 30px Georgia;
+    display: block;
+}
+#header {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+#menu {
+    margin-top: 15px;
+    float: right;
+}
+.horizontal-list li {
+    list-style: none;
+    display: inline;
+    padding: 0 4px;
+}
+.comments-link {
+    float: right;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+}
+#content {
+    padding-bottom: 30px;
+}
+#content .text {
+    margin: 10px 0 40px 0;
+}
+#content .tags {
+    float: right;     
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #000;
+}
+#social {
+    float: right;
+}
+#copyright {
+    float: left;
+}
