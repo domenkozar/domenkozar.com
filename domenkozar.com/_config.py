@@ -24,7 +24,7 @@ import _rst_directive
 #  If you're hosting a blogofile powered site as a subdirectory of a larger
 #  non-blogofile site, then you would set the site_url to the full URL
 #  including that subdirectory: "http://www.yoursite.com/path/to/blogofile-dir"
-site.url = "http://www.domenkozar.com"
+site.url = "http://beta.domenkozar.com"
 
 #### Blog Settings ####
 blog = controllers.blog
@@ -39,7 +39,7 @@ blog.enabled = True
 #  and you set blog_path to "/blog" your full blog URL would be
 #  "http://www.yoursite.com/~ryan/blog"
 #  Leave blank "" to set to the root of site_url
-blog.path = "/blog"
+blog.path = ""
 
 ## blog_name -- Your Blog's name.
 # This is used repeatedly in default blog templates
@@ -52,6 +52,10 @@ blog.description = u"Domen Kožar's thoughts"
 ## blog_timezone -- the timezone that you normally write your blog posts from
 blog.timezone = "Europe/Ljubljana"
 
+# pagination
+blog_pagination_dir = "page"
+blog_posts_per_page = 15
+
 # disqus
 blog.disqus.enabled = True
-blog.disqus.name = "fubar"
+blog.disqus.name = "f00bar"
