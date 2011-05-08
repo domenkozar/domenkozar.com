@@ -10,14 +10,11 @@
  *
  */
 
-@import url("basic.css");
-
 /* -- page layout ----------------------------------------------------------- */
 
 div.document {
     background-color: white;
     text-align: left;
-    background-image: url(contents.png);
     background-repeat: repeat-x;
 }
 
@@ -36,7 +33,6 @@ div.related {
 }
 
 div.related ul {
-    background-image: url(navigation.png);
     height: 2em;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -65,64 +61,9 @@ div.related ul li a:hover {
     color: #3CA8E7;
 }
 
-div.sphinxsidebarwrapper {
-    padding: 0;
-}
-
-div.sphinxsidebar {
-    margin: 0;
-    padding: 0.5em 15px 15px 0;
-    width: 210px;
-    float: right;
-    font-size: 1em;
-    text-align: left;
-}
-
-div.sphinxsidebar h3, div.sphinxsidebar h4 {
-    margin: 1em 0 0.5em 0;
-    font-size: 1em;
-    padding: 0.1em 0 0.1em 0.5em;
-    color: white;
-    border: 1px solid #86989B;
-    background-color: #AFC1C4;
-}
-
-div.sphinxsidebar h3 a {
-    color: white;
-}
-
-div.sphinxsidebar ul {
-    padding-left: 1.5em;
-    margin-top: 7px;
-    padding: 0;
-    line-height: 130%;
-}
-
-div.sphinxsidebar ul ul {
-    margin-left: 20px;
-}
-
-div.footer {
-    background-color: #E3EFF1;
-    color: #86989B;
-    padding: 3px 8px 3px 0;
-    clear: both;
-    font-size: 0.8em;
-    text-align: right;
-}
-
-div.footer a {
-    color: #86989B;
-    text-decoration: underline;
-}
-
-/* -- body styles ----------------------------------------------------------- */
-
 p {    
     margin: 0.8em 0 0.5em 0;
 }
-
-
 
 div.body a {
     text-decoration: underline;
@@ -198,7 +139,6 @@ tt.descname, tt.descclassname, tt.xref {
 }
 
 hr {
-    border: 1px solid #abc;
     margin: 2em;
 }
 
@@ -313,4 +253,9 @@ div.viewcode-block:target {
     background-color: #f4debf;
     border-top: 1px solid #ac9;
     border-bottom: 1px solid #ac9;
+}
+
+ul {
+    list-style: square;
+    list-style-position: inside;
 }
