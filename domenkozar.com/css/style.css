@@ -44,8 +44,11 @@ a {
     display: inline;
     padding: 0 4px;
 }
-.comments-link {
-    float: right;
+.blog_post {
+}
+.after_post  {
+    text-align: right;
+    margin-bottom: 40px;
 }
 #container {
     width: 800px;
@@ -54,10 +57,7 @@ a {
     position: relative;
 }
 #content {
-    padding-bottom: 30px;
-}
-#content .text {
-    margin: 10px 0 40px 0;
+    padding-bottom: 20px;
 }
 #content .tags {
     float: right;     
@@ -66,7 +66,7 @@ a {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 30px;
+    height: 20px;
     border-top: 1px solid #000;
 }
 #social {
@@ -74,4 +74,18 @@ a {
 }
 #copyright {
     float: left;
+}
+#pagination {
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* archives.html */
+.archives.year {
+    font: 35px 'Cabin', "Georgia";
+}
+.archives.month {
+    margin-left: 10px;
+}
+a.archives {
+    margin-left: 20px;
 }
