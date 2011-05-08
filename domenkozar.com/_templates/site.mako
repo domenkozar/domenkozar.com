@@ -1,110 +1,52 @@
 <%inherit file="base.mako" />
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Domen Kožar's blog</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-		<link href='reset.css' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" charset="utf-8">
-		</script>
-		<style type="text/css">
-		body {
-	      font: 13px/1.5 "Ubuntu", "Georgia", "Helvetica Neue", "Helvetica", "Times New Roman", sans-serif;
-		}
-		em, i {
-        font-style: italic;
-		}
-		b, strong {
-        font-weight: bold;
-		}
-		a {
-        color: #000;
-				text-decoration: underline;
-		}
-		h1 {
-        font: 3em 'Cabin', "Georgia";
-				border-bottom: 1px solid #000;
-				padding-bottom: 1px;
-		}
-		h1 a {
-        color: #000;
-				text-decoration: none;
-		}
-		#logo {
-		    float: left;
-		}
-		#logo strong {
-        font: 30px Georgia;
-				display: block;
-		}
-		#header {
-        overflow: hidden;
-				margin-bottom: 40px;
-		}
-		#menu {
-        margin-top: 15px;
-        float: right;
-		}
-		#menu li {
-        list-style: none;
-				display: inline;
-				padding: 0 4px;
-		}
-		#container {
-        width: 800px;
-				margin: 0 auto;
-		}
-		#content .text {
-			  margin: 10px 0 30px 0;
-		}
-		#content .tags {
-        float: right;     
-		}
-
-		#social {
-        float: right;
-		}
-		</style>
-	</head>
-	<body>
-		<div id="container">
+  <head>
+    ${ self.head() }
+  </head>
+  <body>
+    <a href="http://github.com/iElectric/domenkozar.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+    <div id="container">
       <div id="header">
-			  <div id="logo">
-					<strong>Domen Kožar</strong>
-					<em>Open Source enthusiast and Python/Plone/Django/Pyramid/Web developer</em>
-				</div>
-				<ul id="menu">
-					<li><a href="">Blog</a></li>
-					<li><a href="">Projects</a></li>
-					<li><a href="">About</a></li>
-				</ul>
-			</div>
-
-			<div id="content">
-                ${ next.body() }
-				<h1><a href="">Plone under development</a></h1>
-				<em class="datetime">1. May 2011 at 20:03</em>
-				<span class="tags">written under <a href="">English</a>, Plone</span>
-				<div class="text">
-	Lorem ipsum dolor sit amet, consectetur <strong>adipisicing elit</strong>, sed do <a href="">eiusmod</a> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-
-				<h1><a href="">And more content</a></h1>
-				<em>1. May 2011 at 20:03</em>
-				<div class="text">
-	Lorem ipsum dolor sit amet, consectetur <strong>adipisicing elit</strong>, sed do <a href="">eiusmod</a> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-			</div>
-
+        ${ self.header() }
+      </div>
+      <div id="content">
+        ${ next.body() }
+      </div>
       <div id="footer">
-				<ul id="social">
-					<li><a href="mailto:domen@dev.si">domen@dev.si</a></li>
-					<li><a href="https://twitter.com/#!/iElectric">twitter</a></li>
-					<li><a href="https://github.com/iElectric">github</a></li>
-				</ul>
-			</div>
-		</div>
-	</body>
+        ${ self.footer() }
+      </div>
+    </div>
+  </body>
 </html>
+
+<%def name="head()">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold' rel='stylesheet' type='text/css'>
+  <link href='/css/reset.css' rel='stylesheet' type='text/css'>
+  <link href='/css/rst.css' rel='stylesheet' type='text/css'>
+  <link href='/css/style.css' rel='stylesheet' type='text/css'>
+  <%include file="head.mako" />
+</%def>
+<%def name="header()">
+  <div id="logo">
+    <strong><a href="/">Domen Kožar</a></strong>
+    <em>Open Source enthusiast and Python/Plone/Django/Pyramid/Web developer</em>
+  </div>
+  <ul id="menu" class="horizontal-list">
+    <li><a href="/archives.html">Archives</a></li>
+    <!--<li><a href="/projects.html">Projects</a></li>-->
+    <li><a href="/about.html">About</a></li>
+  </ul>
+  <%include file="header.mako" />
+</%def>
+<%def name="footer()">
+  <span id="copyright">© 2009-2011 by Domen Kožar. All rights reserved.</span>
+  <ul id="social" class="horizontal-list">
+    <li><a href="mailto:domen@dev.si">email</a></li>
+    <li><a href="https://twitter.com/#!/iElectric">twitter</a></li>
+    <li><a href="https://github.com/iElectric">github</a></li>
+  </ul>
+  <%include file="footer.mako" />
+</%def>
