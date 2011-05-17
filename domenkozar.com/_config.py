@@ -58,4 +58,4 @@ blog_posts_per_page = 15
 
 # disqus
 blog.disqus.enabled = True
-blog.disqus.name = "f00bar"
+blog.disqus.name = "domenkozar"
