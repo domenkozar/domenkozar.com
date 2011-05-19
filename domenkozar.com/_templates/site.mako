@@ -42,11 +42,26 @@
   <%include file="header.mako" />
 </%def>
 <%def name="footer()">
-  <span id="copyright">© 2009-2011 by Domen Kožar. All rights reserved.</span>
+  <span id="copyright">© 2009-2011 by Domen Kožar. </span>
+  <span>&nbsp;This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span>
+  is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">CCA 3.0 Unported License</a>.</span>
   <ul id="social" class="horizontal-list">
     <li><a href="mailto:domen@dev.si">email</a></li>
     <li><a href="https://twitter.com/#!/iElectric">twitter</a></li>
     <li><a href="https://github.com/iElectric">github</a></li>
   </ul>
   <%include file="footer.mako" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2515480-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 </%def>
