@@ -17,6 +17,6 @@ Following has been done on Products.TinyMCE:
 
 Next week, I will work on current tickets at plone.org tracker. Time to shoot some bugs!
 
-*PS1: Changes were commited to svn collective, although I keep them at `github <https://github.com/iElectric/Products.TinyMCE>`_.*
+PS: Changes were commited to svn collective, although I keep them at `github <https://github.com/iElectric/Products.TinyMCE>`_.
 
 *PS2: The Sweet Vandals were my spiritual company for past week, wonder what funk is coming up for the next one :)*
