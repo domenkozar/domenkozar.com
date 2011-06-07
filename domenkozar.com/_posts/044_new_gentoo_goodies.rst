@@ -1,7 +1,7 @@
 ---
 categories: english, pypy, gentoo
 author: Domen Kožar
-date: 2011/07/05 18:45:53
+date: 2011/06/07 18:45:53
 title: "New Gentoo Goodies"
 draft: false
 ---
