@@ -8,7 +8,7 @@ draft: false
 
 Wow, a lot has happened since my last blog post. Highlight of the July being the Sauna Sprint 2011!
 
-.. image:: images/046_groupphoto.jpg
+.. image:: /images/046_groupphoto.jpg
     :width: 600px
 
 **Tom Gross** worked on improving TinyMCE integration with JQuery plugin, javascript combiner and compressor. Now plain Plone 4 production site has 1/3 less requests in edit mode.
@@ -34,10 +34,10 @@ Changelog:
 * improved upgrade procedure [tomgross + dokai]
 * fixed #10803 [iElectric]
 
-.. image:: images/046_dialog.png
+.. image:: /images/046_dialog.png
     :width: 600px
 
-.. image:: images/046_thumbs.png
+.. image:: /images/046_thumbs.png
     :width: 600px
 
 I plan to provide following (under GSOC section) until the end of GSOC2011 (or a bit later, if time bites me): http://ie.ietherpad.com/61
