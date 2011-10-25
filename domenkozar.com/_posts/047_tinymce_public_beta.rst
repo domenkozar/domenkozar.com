@@ -13,7 +13,7 @@ Installation
 - add `<http://static.domenkozar.com>`_ to your find-links
 - pin version to **Products.TinyMCE-1.3-beta1**
 - run upgrade step in *portal_setup*
-- report issues ;-)
+- `report issues <https://github.com/iElectric/Products.TinyMCE/issues>`_ ;-)
 
 Changelog
 =========
