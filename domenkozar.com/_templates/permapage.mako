@@ -9,6 +9,6 @@
   var disqus_identifier = "${post.permapath()}";
   var disqus_shortname = "${bf.config.blog.disqus.name}";
 </script>
-<script async="true" type="text/javascript" src="http://${bf.config.blog.disqus.name}.disqus.com/embed.js"></script>
-<noscript><a href="http://${bf.config.blog.disqus.name}.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+<script async="true" type="text/javascript" src="https://${bf.config.blog.disqus.name}.disqus.com/embed.js"></script>
+<noscript><a href="https://${bf.config.blog.disqus.name}.disqus.com/?url=ref">View the discussion thread.</a></noscript>
 % endif

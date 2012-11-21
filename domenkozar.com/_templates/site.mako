@@ -22,8 +22,8 @@
 
 <%def name="head()">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold' rel='stylesheet' type='text/css'>
   <link href='/css/reset.css' rel='stylesheet' type='text/css'>
   <link href='/css/rst.css' rel='stylesheet' type='text/css'>
   <link href='/css/style.css' rel='stylesheet' type='text/css'>
