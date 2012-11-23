@@ -13,7 +13,7 @@ I've been doing web development since 2007, <a href="http://www.python.org/">Pyt
 <a href="http://en.wikipedia.org/wiki/Open-source_software">Open Source Software</a> is what I mainly develop and contribute to. 
 </p>
 
-<p>If you like my work, you are welcome to buy me some quality beer at some sprint or conference. There are contact links at bottom of the page and donate button.</p>
+<p>Contributions make me happy :)</p>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_donations">
     <input type="hidden" name="business" value="ielectric@gmail.com">
@@ -26,24 +26,56 @@ I've been doing web development since 2007, <a href="http://www.python.org/">Pyt
     <img alt="" border="0" src="https://www.paypalobjects.com/WEBSCR-640-20110401-1/en_US/i/scr/pixel.gif" width="1" height="1" />
 </form>
 
-<h1>Employment</h1>
-<h2>Hexagon IT Oy (2011 - today)</h2>
+<span class="gittip-0001" gittip-username="iElectric">
+</span>
+<script id="gittip-0001"
+  src="https://www.gittip.com/assets/widgets/0001.js">
+</script>
+
+<h1>Open Source</h1>
+
+<h3>GitHub</h3>
+<i>See <a href="http://resume.github.com/?iElectric">my resume</a> and <a href="https://github.com/iElectric">my profile</a>.</i>
+
+<h3>Google Summer of Code (2010, 2011, 2012)</h3>
+<i><small><a href="https://github.com/iElectric/g-pypi">Gentoo: g-pypi (2010)</a>, <a href="https://github.com/plone/Products.TinyMCE">Plone: Products.TinyMCE (2011)</a>, <a href="https://github.com/Pylons/substanced">Python: Substance D (2012)</a></small></i>
+
+<h3>Almir - Bacula backup web administration interface (2011 - today)</h3>
+<i><small><a href="http://almir.readthedocs.org/en/latest/">Documentation</a>, <a href="http://almir-demo.domenkozar.com">Demo</a></small></i>
+
+<h3>mr.bob - Project sekelton renderer (2012)</h3>
+<i><small><a href="http://mrbob.readthedocs.org/en/latest/">Documentation</a></small></i>
+
+<h1>Education</h1>
+
+<h3><a href="/media/cryptography_I_certificate.pdf">Cryptography I coursera certificate</a></h3>
+<i><small>taught by Dan Boneh, Stanford University</small></i>
+
+<h1>Freelancing</h1>
+
+<h3>Lex Machina, Inc (2012)</h3>
+<i><small>Pyramid developer</small></i>
+
+<h3>Syslab.com Gmbh (2012)</h3>
+<i><small>Pyramid developer</small></i>
+
+<h3>Hexagon IT Oy (2011 - 2012)</h3>
 <i><small>Plone/Python developer</small></i>
 
-<h2>Projection Advertising LTD (2011)</h2>
+<h3>Projection Advertising LTD (2011)</h3>
 <i><small>Renderfarm setup and administration</small></i>
 
-<h2>Lomos d.o.o. (2010)</h2>
-<i><small>XBMC plugins development</small></i>
+<h3>Lomos d.o.o. (2010, 2012)</h3>
+<i><small>Python developer</small></i>
 
-<h2>Niteoweb d.o.o. (2008 - today)</h2>
+<h3>Niteoweb d.o.o. (2008 - today)</h3>
 <i><small>Plone/Python developer</small></i>
 
-<h2>Kiberpipa / Cyberpipe NGO (2009 - today)</h2>
-<i><small>Linux administrator and Django developer</small></i>
+<h3>Kiberpipa / Cyberpipe (hackerspace) (2009 - today)</h3>
+<i><small>Linux Administrator and Python/Django developer</small></i>
 
-<h2>Real Estate Institute (2007 - today)</h2>
-<i><small>IT administrator</small</i>
+<h3>Real Estate Institute (2007 - today)</h3>
+<i><small>IT Administrator</small</i>
 
 <br />
 <br />
