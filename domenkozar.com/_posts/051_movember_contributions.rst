@@ -1,5 +1,5 @@
 ---
-categories: english, python, pyramid
+categories: english, python, pyramid, plone, gentoo
 author: Domen Kožar
 date: 2012/12/01 13:30:00
 title: "Movember contributions"
