@@ -43,13 +43,16 @@ I've been doing web development since 2007, <a href="http://www.python.org/">Pyt
 <h3>Almir - Bacula backup web administration interface (2011 - today)</h3>
 <i><small><a href="http://almir.readthedocs.org/en/latest/">Documentation</a>, <a href="http://almir-demo.domenkozar.com">Demo</a></small></i>
 
-<h3>mr.bob - Project sekelton renderer (2012)</h3>
+<h3>mr.bob - Project sekleton renderer (2012)</h3>
 <i><small><a href="http://mrbob.readthedocs.org/en/latest/">Documentation</a></small></i>
 
 <h1>Education</h1>
 
 <h3><a href="/media/cryptography_I_certificate.pdf">Cryptography I coursera certificate</a></h3>
 <i><small>taught by Dan Boneh, Stanford University</small></i>
+
+<h3>Masters in Telecommunications (2008-????)</h3>
+<i><small>Faculty of electrical engineering, University of Ljubljana</small></i>
 
 <h1>Freelancing</h1>
 
