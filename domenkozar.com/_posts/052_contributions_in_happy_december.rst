@@ -45,6 +45,9 @@ crappy Django solutions to provide `Akismet spam protection <http://akismet.com/
 commenting framework.  Still lacks a command to clean current spam comments and a way to flag
 comments as spam/ham that will teach Akismet to be a better filter.
 
+**UPDATE**: I forgot about `http://pypi.python.org/pypi/nose-selecttests/0.3`_ release, a package to filter out
+what tests to run from testsuit when using nose test runner.
+
 
 
 If you have an interesting problem to solve under public license, I'm happy to hear from you at domen@dev.si :-)
