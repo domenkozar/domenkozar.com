@@ -31,7 +31,12 @@
 </%def>
 <%def name="header()">
   <div id="logo">
-    <strong><a href="/">Domen Kožar</a></strong>
+    <strong>
+      <a href="/">Domen Kožar</a>
+      <iframe style="border: 0; margin: 0; padding: 0;"
+              src="https://www.gittip.com/iElectric/widget.html"
+              width="48pt" height="22pt"></iframe>
+    </strong>
     <em>Open Source enthusiast and Python/Plone/Django/Pyramid/Web developer</em>
   </div>
   <ul id="menu" class="horizontal-list">
