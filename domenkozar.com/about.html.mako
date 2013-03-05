@@ -14,7 +14,7 @@ I'm a fellow <a href="http://en.wikipedia.org/wiki/Open-source_software">Open So
 </p>
 
 <p>
-You can reach him on IRC (Freenode) under nickname iElectric or at <a href="mailto:domen@dev.si">domen@dev.si</a>.
+You can reach me on IRC (Freenode) under nickname iElectric or at <a href="mailto:domen@dev.si">domen@dev.si</a>.
 </p>
 
 
