@@ -2,16 +2,21 @@
 <%! import datetime %>
 
 <p>
-I'm ${ datetime.date.today().year - 1989 } years old student at <a href="http://fides.fe.uni-lj.si/welcome-E.html">Faculty of Electrical Engineering</a> in <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=ljubljana&aq=&sll=37.0625,-95.677068&sspn=38.826758,79.013672&ie=UTF8&hq=&hnear=Ljubljana,+Slovenia&t=h&z=11">Ljubljana</a>.
+I'm ${ datetime.date.today().year - 1989 } years old student at <a href="http://fides.fe.uni-lj.si/welcome-E.html">Faculty of Electrical Engineering</a> finishing Telecommunications masters degree in <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=ljubljana&aq=&sll=37.0625,-95.677068&sspn=38.826758,79.013672&ie=UTF8&hq=&hnear=Ljubljana,+Slovenia&t=h&z=11">Ljubljana, Slovenia</a>.
 </p>
 
 <p>
-I've been doing web development since 2007, <a href="http://www.python.org/">Python</a> being my primary language since then. Here is an incomplete keywords list of tehnologies I've worked with: <a href="http://en.wikipedia.org/wiki/HTML">HTML</a>/<a href="http://en.wikipedia.org/wiki/CSS">CSS</a>/<a href="http://en.wikipedia.org/wiki/YAML">YAML</a>/<a href="http://en.wikipedia.org/wiki/JQuery">JQuery</a>/<a href="http://python.org/">Python</a>/<a href="http://pylonsproject.org/">Pylons</a>/<a href="http://www.djangoproject.com">Django</a>/<a href="http://www.plone.org/">Plone</a>/<a href="http://pylonsproject.org/">Pyramid</a>/<a href="http://en.wikipedia.org/wiki/GTK%2B">GTK+</a>/<a href="http://www.gentoo.org">Gentoo</a>. I love to play and hear about new tehnology.
+I've been doing web development since 2007, <a href="http://www.python.org/">Python</a> being my primary language almost since the beginning. Here is an list of buzzwords that I can associate with: <a href="http://en.wikipedia.org/wiki/HTML">HTML</a>/<a href="http://en.wikipedia.org/wiki/CSS">CSS</a>/<a href="http://en.wikipedia.org/wiki/YAML">YAML</a>/<a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>/<a href="http://python.org/">Python</a>/<a href="http://pylonsproject.org/">Pylons Project</a>/<a href="http://www.djangoproject.com">Django framework</a>/<a href="http://www.plone.org/">Plone CMS</a>/<a href="http://pylonsproject.org/">Pyramid framework</a>/<a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST</a>/<a href="http://www.gentoo.org">Gentoo</a>/<a href="http://nixos.org/">NixOS</a>. I love to play and hear about new tehnology.
 </p>
 
 <p>
-<a href="http://en.wikipedia.org/wiki/Open-source_software">Open Source Software</a> is what I mainly develop and contribute to. 
+I'm a fellow <a href="http://en.wikipedia.org/wiki/Open-source_software">Open Source</a> contributor to many Python related projects, but mainly to Plone and Pylons Project. Being participant of <a href="https://developers.google.com/open-source/soc/">Google Summer of Code</a> for 3 consecutive years, I'm eager to continue for another year and apply for mentorship in future. You can see me coding in a bar or drinking beer with a local Python community somewhere in Europe.
 </p>
+
+<p>
+You can reach him on IRC (Freenode) under nickname iElectric or at <a href="mailto:domen@dev.si">domen@dev.si</a>.
+</p>
+
 
 <p>Contributions make me happy :)</p>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
