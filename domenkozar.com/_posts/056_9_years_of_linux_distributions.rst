@@ -1,5 +1,5 @@
 ---
-categories: english, plone, gentoo
+categories: english, plone, gentoo, nixos
 author: Domen Kožar
 date: 2013/07/20 22:00:00
 title: "9 years of Linux distributions"

@@ -14,7 +14,7 @@ other web app that requires both an administration and a retail interface. Subst
 to the Zope application server. Quick links to project info: 
 
 
-* `Repository, issue tracker <http://bitbucket.org/Pylons/substanced>`_
+* `Repository, issue tracker <http://github.com/Pylons/substanced>`_
 * `Demo <http://substanced.repoze.org/>`_
 * `Documentation <http://substanced.readthedocs.org/en/latest/>`_
 
