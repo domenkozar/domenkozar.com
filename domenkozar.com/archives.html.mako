@@ -1,11 +1,12 @@
 <%inherit file="site.mako" />
+<article class="post">
 % for i, post in enumerate(bf.config.blog.posts):
     % if i == 0 or bf.config.blog.posts[i-1].date.year != post.date.year:
-        <strong class="year archives">${ post.date.year }</strong><br />  
+        <h1>${ post.date.year }</h1>
     % endif
     % if i == 0 or bf.config.blog.posts[i-1].date.month != post.date.month:
-        <strong class="month archives">${ post.date.strftime('%B') }</strong><br />  
+        <h3>${ post.date.strftime('%B') }</h3>  
     % endif
     <a class="archives" href="${ post.permalink }">${ post.title }</a><br />
 % endfor
-<br /><br /><br />
+<article>

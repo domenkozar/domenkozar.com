@@ -8,4 +8,6 @@ config = {
 
 
 def run(content):
-    return docutils.core.publish_parts(content, writer_name='html')['html_body']
+    return docutils.core.publish_parts(content,
+                                       writer_name='html',
+                                       settings_overrides={'initial_header_level': 3})['html_body']

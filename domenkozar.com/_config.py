@@ -59,3 +59,7 @@ blog_posts_per_page = 15
 # disqus
 blog.disqus.enabled = True
 blog.disqus.name = "domenkozar"
+
+# post excerpts
+blog.post_excerpts.enabled = True
+blog.post_excerpts.word_length = 75

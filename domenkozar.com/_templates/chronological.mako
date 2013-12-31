@@ -1,18 +1,15 @@
 <%inherit file="site.mako" />
 % for post in posts:
-  <%include file="post.mako" args="post=post" />
-% if bf.config.blog.disqus.enabled:
-  <div class="after_post"><a href="${post.permalink}#disqus_thread">Read and Post Comments</a></div>
-% endif
+  <%include file="post.mako" args="post=post,excerpt=True" />
 % endfor
-<div id="pagination">
-% if prev_link:
- <a href="${prev_link}">« Previous Page</a>
-% endif
-% if prev_link and next_link:
-  --  
-% endif
-% if next_link:
- <a href="${next_link}">Next Page »</a>
-% endif
-</div>
+<nav class="Pagination" role="pagination">
+ % if prev_link:
+  <a class="Pagination-newer" href="${prev_link}">« Newer posts</a>
+ % endif
+
+ <span class="Pagination-number" onclick="location.href='/archives.html'" style="cursor: pointer">Archives</span>
+
+ % if next_link:
+  <a class="Pagination-older" href="${next_link}">Older posts »</a>
+ % endif
+</nav>
