@@ -1,5 +1,5 @@
 ---
-categories: english, plone, gentoo, nix
+categories: english, plone, gentoo, nix, nixos
 author: Domen Kožar
 date: 2014/01/02 12:30:00
 title: "Getting started with Nix package manager"
