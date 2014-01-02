@@ -45,6 +45,7 @@
     <footer class="Post-footer">
 
       <section class="Share">
+        <p>Share to:</p>
         <a href="http://twitter.com/share?text=${post.title}&url=${post.permapath()}"
               onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a>
         <a href="https://www.facebook.com/sharer/sharer.php?u=${post.permapath()}"
