@@ -27,11 +27,11 @@ I'll explain in short how to bootstrap and get started.
 # A few reasons why to use Nix instead of system package manager
 
 - Install packages independent of your system environment (try installing Python 2.6, 2.7, 3.2, 3.3 and PyPy on CentOS)
-- Re-producable environment: instead of using language dependent package managers to build development
+- Reproducible environment: instead of using language dependent package managers to build development
   environment, use language agnostic tool
 - Binary and source install
 - Give your unix user the power to install packages
-- Did I mention it's portabale and built to be re-producable?
+- Did I mention it's portabale and built to be reproducible?
 - [Other features I'm not going to dive in](http://nixos.org/nix/)
 
 
