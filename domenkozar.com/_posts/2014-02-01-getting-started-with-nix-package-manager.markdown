@@ -31,7 +31,7 @@ I'll explain in short how to bootstrap and get started.
   environment, use language agnostic tool
 - Binary and source install
 - Give your unix user the power to install packages
-- Did I mention it's portabale and built to be reproducible?
+- Did I mention it's portable and built to be reproducible?
 - [Other features I'm not going to dive in](http://nixos.org/nix/)
 
 
