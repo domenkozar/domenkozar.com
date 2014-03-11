@@ -244,4 +244,4 @@ Is that the future of Linux configuration management and packaging? I certainly 
 *Will more distributions go for stateless design in the future?*
 
 - *PS: See also previous blog post: [Getting started with Nix package manager](https://www.domenkozar.com/2014/01/02/getting-started-with-nix-package-manager/)*
-- *PS2: See my [talk on NixOS at FOSDEM ](video.fosdem.org/2014/H1309_Van_Rijn/Saturday/NixOS_declarative_configuration_Linux_distribution.webm). [slides](http://static.domenkozar.com/slides/nixos-fosdem2014/#/)*
+- *PS2: See my [talk on NixOS at FOSDEM ](https://video.fosdem.org/2014/H1309_Van_Rijn/Saturday/NixOS_declarative_configuration_Linux_distribution.webm). [slides](http://static.domenkozar.com/slides/nixos-fosdem2014/#/)*
