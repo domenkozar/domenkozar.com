@@ -52,7 +52,7 @@ to the machine and **examine  all of the edge cases that machine state could be 
 
 Trivial example shown above does not demonstrate how number of combinations of machine states grows exponentially
 once a decent amount of services interoperate on a Linux machine. Many edge cases our code below delaractive configuration
-has to cover. Anyone developing Puppet recipes will be able to explain you this phenomenon in practice.
+has to cover. Anyone developing Puppet/Chef recipes will be able to explain you this phenomenon in practice.
 
 
 # Going stateless
