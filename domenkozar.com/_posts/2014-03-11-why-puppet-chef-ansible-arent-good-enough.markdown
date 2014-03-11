@@ -14,17 +14,17 @@ that we've accumulated over the last 30 years to the packaging and deployment pr
 # History of Linux automation
 
 Remember (old-timer?) Linux user typing commands into terminal that goes and mutates the
- state of the Linux machine. He'll go and stop a process, change configuration file and start the process again.
-He's the one connecting to the machine and making sure the state of the Linux machine is mutated correctly.
+ state of the Linux machine. They'll go and stop a process, change configuration file and start the process again.
+They's the one connecting to the machine and making sure the state of the Linux machine is mutated correctly.
 Let's call this method [Imperative Configuration](http://en.wikipedia.org/wiki/Imperative_programming).
 
-He'll soon realize there are many routine tasks and there is a benefit of automating them. In old days
-he'd write a collection of bash scripts, but today we have frameworks in most popular languages to refactor
+They'll soon realize there are many routine tasks and there is a benefit of automating them. In old days
+They'd write a collection of bash scripts, but today we have frameworks in most popular languages to refactor
 imperative steps and reuse them. Let's call this method **Automated Imperative Configuration** (as implemented for example in
 [Chef](http://www.getchef.com/chef/) (Ruby) or [Fabric](http://docs.fabfile.org/en/1.8/) (Python)).
 
 [Code complexity](http://en.wikipedia.org/wiki/Programming_complexity) and [the need of a documented operating system](http://conf.writethedocs.org/eu/2014/)
- soon inspired our Linux user to think further. What if he built one layer of abstraction on top of those steps 
+ soon inspired our Linux user to think further. What if they built one layer of abstraction on top of those steps 
 and rather describe the end state of the system we'd like the Linux machine to be and the underlying system
  will take care of examining state and executing commands to do so? Something like we use SQL everyday, to focus
  on WHAT instead of HOW. Let's call this method [Declarative Configuration](http://en.wikipedia.org/wiki/Declarative_programming)
@@ -70,7 +70,7 @@ Before we dive into that, let's see another real world example of stateful vs. s
 1. Generate a random key (cryptographically random, so it can not be guessed)
 2. Store the key in our database
 3. Send email to the user with a link to our website containing the key
-4. Once user has clicked the link in the email, check the random key matches the one in database and hence we know he has gotten the email
+4. Once user has clicked the link in the email, check the random key matches the one in database and hence we know they has gotten the email
 5. Remove the key from the database
 
 ## Stateless solution
