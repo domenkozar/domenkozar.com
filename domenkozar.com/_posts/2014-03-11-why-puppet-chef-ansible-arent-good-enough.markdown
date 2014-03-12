@@ -15,11 +15,11 @@ that we've accumulated over the last 30 years to the packaging and deployment pr
 
 Remember (old-timer?) Linux user typing commands into terminal that goes and mutates the
  state of the Linux machine. They'll go and stop a process, change configuration file and start the process again.
-They's the one connecting to the machine and making sure the state of the Linux machine is mutated correctly.
+They're the one connecting to the machine and making sure the state of the Linux machine is mutated correctly.
 Let's call this method [Imperative Configuration](http://en.wikipedia.org/wiki/Imperative_programming).
 
 They'll soon realize there are many routine tasks and there is a benefit of automating them. In old days
-They'd write a collection of bash scripts, but today we have frameworks in most popular languages to refactor
+they'd write a collection of bash scripts, but today we have frameworks in most popular languages to refactor
 imperative steps and reuse them. Let's call this method **Automated Imperative Configuration** (as implemented for example in
 [Chef](http://www.getchef.com/chef/) (Ruby) or [Fabric](http://docs.fabfile.org/en/1.8/) (Python)).
 
