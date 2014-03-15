@@ -131,7 +131,7 @@ Removing our filesystem as a state we get the following workflow:
 
 We've changed only one thing:
 
-**Output files of a sucessful build are stored under unique `$PREFIX` directory, so as long as we can map the package name from *packaging
+**Output files of a successful build are stored under unique `$PREFIX` directory, so as long as we can map the package name from *packaging
 metadata* to its `$PREFIX`, we can deterministically say headers in `$PREFIX/include` belong to that specific package**.
 
 No more global prefixes such as `/usr`, `/usr/local`, `/opt` from [FHS](http://www.pathname.com/fhs/). Software which doesn't assume
