@@ -11,7 +11,7 @@ Linux world opened to me back in high school. After `4 years of gaming <http://w
 it was obvious to me: e-sports are slowly evolving and living in a country as Slovenia it's a dead end. 
 
 After talking with more experienced colleagues, my first distribution was `Gentoo <http://gentoo.org/>`_ - as it promised freedom. A week of reading
-Gentoo Handbook and fixing of typical mistakes beginner mistakes, I got a working Gentoo installation. I reinstalled it a
+Gentoo Handbook and fixing typical beginner mistakes, I got a working Gentoo installation. I reinstalled it a
 few times in next months because I wanted to improve my environment and also practice day long installation procedure.
 
 I remember the day (about half a year after being introduced to Gentoo) that I deleted my `/var/lib/` directory. As a stubborn
