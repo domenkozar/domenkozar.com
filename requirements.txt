@@ -1,0 +1,4 @@
+Blogofile==0.7.1
+slugify
+sphinx
+https://bitbucket.org/birkenfeld/pygments-main/get/tip.zip

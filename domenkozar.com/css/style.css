@@ -1,0 +1,94 @@
+html, body {
+    font: 14px/1.5 "Ubuntu", "Georgia", "Helvetica Neue", "Helvetica", "Times New Roman", sans-serif;
+    height: 100%;
+}
+.blog_post_title {
+    font: 35px 'Cabin', "Georgia";
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
+}
+.blog_post_title a {
+    color: #000;
+    text-decoration: none;
+}
+em, i {
+    font-style: italic;
+}
+b, strong {
+    font-weight: bold;
+}
+a {
+    color: #000;
+    text-decoration: underline;
+}
+#logo {
+    float: left;
+}
+#logo a {
+    text-decoration: none;
+}
+#logo strong {
+    font: 30px Georgia;
+    display: block;
+}
+#header {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+#menu {
+    margin-top: 15px;
+    float: right;
+}
+.horizontal-list li {
+    list-style: none;
+    display: inline;
+    padding: 0 4px;
+}
+.blog_post {
+}
+.after_post  {
+    text-align: right;
+    margin-bottom: 40px;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+}
+#content {
+    padding-bottom: 20px;
+}
+#content .tags {
+    float: right;     
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    border-top: 1px solid #000;
+}
+#social {
+    float: right;
+}
+#copyright {
+    float: left;
+}
+#pagination {
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* archives.html */
+.archives.year {
+    font: 35px 'Cabin', "Georgia";
+}
+.archives.month {
+    margin-left: 10px;
+}
+a.archives {
+    margin-left: 20px;
+}
+.addthis_toolbox {
+    margin-top: 20px;
+}
