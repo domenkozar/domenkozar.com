@@ -21,7 +21,7 @@
           <img class="fa-stack-1x" src="/images/me.png" />
         </span></a>
       <h2 class="Title">Domen Kožar's thoughts</h2>
-      <h6 class="Description"><a href="http://www.python.org">Python</a> / <a href="http://nixos.org">Nix</a> / <a href="http://shop.oreilly.com/product/9780596517748.do">JavaScript</a> developer</h6>
+      <h6 class="Description"><a href="https://haskell-lang.org/">Haskell</a> / <a href="https://nixos.org">Nix</a> / <a href="http://elm-lang.org">Elm</a> developer</h6>
 
       <section>
         <a href="https://twitter.com/iElectric"><span class="fa-stack fa-lg">
@@ -57,10 +57,6 @@
       <section>
         <span>This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span>
         is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">CCA 3.0 Unported License</a>.</span>
-      </seciton>
-
-      <section>
-        Based on <a href="http://quill.herelde.com/">Quill theme</a> by <a href="http://www.herelde.com">Herelde</a>.
       </seciton>
 
       <script type="text/javascript">
