@@ -70,7 +70,7 @@ Before we dive into that, let's see another real world example of stateful vs. s
 1. Generate a random key (cryptographically random, so it can not be guessed)
 2. Store the key in our database
 3. Send email to the user with a link to our website containing the key
-4. Once user has clicked the link in the email, check the random key matches the one in database and hence we know they has gotten the email
+4. Once user has clicked the link in the email, check the random key matches the one in database and hence we know they have gotten the email
 5. Remove the key from the database
 
 ## Stateless solution
@@ -145,7 +145,7 @@ metadata.
 
 While we're at rethinking packaging, let's go for **deterministic builds**. Packaging output should depend **only** on packaging instructions we've written.
 
-Actually all that said, we have to carefully pick a language to specfiy *packaging instructions* in it.
+Actually all that said, we have to carefully pick a language to specify *packaging instructions* in it.
 
 Our package manager is implemented as a [Purely Functional Language](http://en.wikipedia.org/wiki/Pure_function).
 
