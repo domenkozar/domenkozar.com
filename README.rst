@@ -5,8 +5,8 @@ Install
 
     $ git clone https://github.com/domenkozar/domenkozar.com.git
     $ virtualenv --no-site-packages .
-    $ activate bin/source
-    $ pip install blogofile
+    $ . bin/activate
+    $ pip install -r requirements.txt
 
 Generate static site
 --------------------
@@ -20,7 +20,7 @@ Deploy
 
 ::
 
-    rsync -avz --delete site.com/_site/ www-data@server:/var/www/www.site.com/
+    rsync -avz --delete domenkozar.com/_site/ www@static.domenkozar.com:/var/www/www.domenkozar.com/
 
 
 Generate pygments.css
