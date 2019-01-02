@@ -24,7 +24,7 @@
       <h6 class="Description"><a href="https://haskell-lang.org/">Haskell</a> / <a href="https://nixos.org">Nix</a> / <a href="http://elm-lang.org">Elm</a> developer</h6>
 
       <section>
-        <a href="https://twitter.com/iElectric"><span class="fa-stack fa-lg">
+        <a href="https://twitter.com/domenkozar"><span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
         </span></a>
@@ -39,10 +39,6 @@
           <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
         </span></a>
         &nbsp;
-        <a href="https://www.gittip.com/iElectric/"><span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-gittip fa-stack-1x fa-inverse"></i>
-        </span></a>
       </section>
       <section>
       </section>
