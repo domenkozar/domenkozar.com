@@ -49,7 +49,7 @@ Inspired by [Ben Gamari's post](https://bgamari.github.io/posts/2020-08-22-what-
 
 # Thinkpad P14s
 
-I've bought a [Thinkpad P14s](https://www.lenovo.com/us/en/coming-soon/P14s-AMD-G2/p/22WSP144SA2>):
+I've bought a [Thinkpad P14s](https://www.lenovo.com/us/en/coming-soon/P14s-AMD-G2/p/22WSP144SA2):
 
     Processor:
     AMD Ryzen 7 PRO 5850U Octa Core (8 Cores / 16 Threads)
