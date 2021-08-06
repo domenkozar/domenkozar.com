@@ -14,5 +14,5 @@ logging.getLogger("MARKDOWN").setLevel(logging.ERROR)
 
 def run(content):
     return markdown.markdown(content,
-                             ['headerid(level=3)', 'codehilite(noclasses=True,pygments_style=pastie)'],
+                             ['headerid(level=3)', 'codehilite(noclasses=True,pygments_style=pastie,guess_lang=False)'],
                              output_format="html5")
