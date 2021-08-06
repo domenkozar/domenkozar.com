@@ -2,7 +2,7 @@
 categories: english, nix, nixos, gentoo
 author: Domen Kožar
 date: 2021/08/06 09:00:00
-title: "New laptop - Thinkad P14s"
+title: "New laptop - Thinkpad P14s"
 draft: false
 ---
 
