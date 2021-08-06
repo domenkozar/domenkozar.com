@@ -21,7 +21,7 @@
           <img class="fa-stack-1x" src="/images/me.png" />
         </span></a>
       <h2 class="Title">Domen Kožar's thoughts</h2>
-      <h6 class="Description"><a href="https://haskell-lang.org/">Haskell</a> / <a href="https://nixos.org">Nix</a> / <a href="http://elm-lang.org">Elm</a> developer</h6>
+      <h6 class="Description"><a href="https://cachix.org/">Cachix</a> founder / <a href="https://nix.dev">Nix.dev</a> writer / <a href="http://weekly.nixos.org">NixOS Weekly</a> editor</h6>
 
       <section>
         <a href="https://twitter.com/domenkozar"><span class="fa-stack fa-lg">
