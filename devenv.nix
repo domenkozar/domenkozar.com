@@ -1,17 +1,16 @@
 { pkgs, ... }:
 
 {
-  languages.python = {
-    enable = true;
-    version = "2.7";
-    venv.enable = true;
-    venv.requirements = ./requirements.txt;
-  };
+  packages = [
+    pkgs.hugo
+    (pkgs.python3.withPackages (pythonPackages: [
+      pythonPackages.docutils
+      pythonPackages.pygments
+    ]))
+  ];
 
-  packages = [ ];
-
-  scripts.build.exec = "blogofile build -s domenkozar.com";
-  scripts.serve.exec = "blogofile serve -s domenkozar.com";
+  scripts.build.exec = "hugo --cleanDestinationDir";
+  scripts.serve.exec = "hugo server";
 
   enterShell = ''
     echo "domenkozar.com development environment"

@@ -1,0 +1,49 @@
+---
+title: Archives
+layout: archives
+url: /archives.html
+aliases:
+  - /archive/2009/03/1/
+  - /archive/2009/06/1/
+  - /archive/2009/07/1/
+  - /archive/2009/08/1/
+  - /archive/2009/09/1/
+  - /archive/2009/10/1/
+  - /archive/2009/11/1/
+  - /archive/2010/01/1/
+  - /archive/2010/02/1/
+  - /archive/2010/03/1/
+  - /archive/2010/04/1/
+  - /archive/2010/05/1/
+  - /archive/2010/06/1/
+  - /archive/2010/07/1/
+  - /archive/2010/08/1/
+  - /archive/2010/09/1/
+  - /archive/2010/10/1/
+  - /archive/2011/05/1/
+  - /archive/2011/06/1/
+  - /archive/2011/07/1/
+  - /archive/2011/08/1/
+  - /archive/2011/10/1/
+  - /archive/2011/11/1/
+  - /archive/2012/01/1/
+  - /archive/2012/05/1/
+  - /archive/2012/12/1/
+  - /archive/2013/01/1/
+  - /archive/2013/02/1/
+  - /archive/2013/03/1/
+  - /archive/2013/07/1/
+  - /archive/2013/08/1/
+  - /archive/2013/09/1/
+  - /archive/2014/01/1/
+  - /archive/2014/03/1/
+  - /archive/2015/09/1/
+  - /archive/2016/12/1/
+  - /archive/2018/06/1/
+  - /archive/2018/09/1/
+  - /archive/2020/02/1/
+  - /archive/2020/12/1/
+  - /archive/2021/08/1/
+  - /archive/2025/06/1/
+  - /archive/2026/07/1/
+---

@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+  {{ $paginator := .Paginate $posts }}
+  {{ range $paginator.Pages }}
+    {{ partial "post.html" (dict "post" . "excerpt" true) }}
+  {{ end }}
+  {{ partial "pagination.html" $paginator }}
+{{ end }}

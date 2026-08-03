@@ -1,0 +1,21 @@
+{{- $pages := .RegularPages -}}
+{{- if .IsHome }}{{ $pages = where site.RegularPages "Section" "posts" }}{{ end -}}
+{{- $pages = first 10 $pages -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ .Title }}</title>
+  <id>{{ .Permalink }}</id>
+  <link href="{{ .Permalink }}"/>
+  {{ with .OutputFormats.Get "ATOM" }}<link href="{{ .Permalink }}" rel="self"/>{{ end }}
+  {{ with index $pages 0 }}<updated>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</updated>{{ end }}
+  {{ range $pages }}
+  <entry>
+    <title>{{ .Title }}</title>
+    <id>{{ .Permalink }}</id>
+    <link href="{{ .Permalink }}"/>
+    <updated>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</updated>
+    <summary type="html">{{ .Summary | transform.XMLEscape }}</summary>
+    {{ range .Params.categories }}<category term="{{ . }}"/>{{ end }}
+  </entry>
+  {{ end }}
+</feed>

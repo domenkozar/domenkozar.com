@@ -1,0 +1,51 @@
+baseURL = "https://www.domenkozar.com/"
+locale = "en-US"
+title = "Domen Kožar"
+timeZone = "Europe/Ljubljana"
+summaryLength = 75
+
+[pagination]
+  pagerSize = 5
+  path = ""
+
+[permalinks.page]
+  posts = "/:year/:month/:day/:slug/"
+
+[permalinks.term]
+  categories = "/category/:slug/"
+
+[permalinks.taxonomy]
+  categories = "/category/"
+
+[taxonomies]
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS", "ATOM"]
+  taxonomy = ["HTML", "RSS", "ATOM"]
+  term = ["HTML", "RSS", "ATOM"]
+
+[outputFormats.RSS]
+  baseName = "feed/index"
+
+[mediaTypes."application/atom+xml"]
+  suffixes = ["xml"]
+
+[outputFormats.ATOM]
+  mediaType = "application/atom+xml"
+  baseName = "feed/atom/index"
+  isPlainText = false
+  rel = "alternate"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  noClasses = true
+
+[params]
+  description = "Domen Kožar's thoughts"
+  language = "en-US"
+
+[security.exec]
+  allow = ["^rst2html$"]

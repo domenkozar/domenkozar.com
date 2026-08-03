@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ if eq .Kind "term" }}
+    {{ $paginator := .Paginate .Pages }}
+    {{ range $paginator.Pages }}
+      {{ partial "post.html" (dict "post" . "excerpt" true) }}
+    {{ end }}
+    {{ partial "pagination.html" $paginator }}
+  {{ else }}
+    <article class="post">
+      <header class="Post-header"><h1>{{ .Title }}</h1></header>
+      <section class="Post-content">
+        <ul>
+          {{ range .Pages.ByTitle }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}
+        </ul>
+      </section>
+    </article>
+  {{ end }}
+{{ end }}
