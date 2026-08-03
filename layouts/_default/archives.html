@@ -1,0 +1,21 @@
+{{ define "body-class" }}archive-template{{ end }}
+{{ define "main" }}
+  <article class="post">
+    {{ $posts := where site.RegularPages "Section" "posts" }}
+    {{ $state := newScratch }}
+    {{ range $posts }}
+      {{ $year := .Date.Format "2006" }}
+      {{ $month := .Date.Format "January" }}
+      {{ if ne ($state.Get "year") $year }}
+        <h1>{{ $year }}</h1>
+        {{ $state.Set "year" $year }}
+        {{ $state.Set "month" "" }}
+      {{ end }}
+      {{ if ne ($state.Get "month") $month }}
+        <h3>{{ $month }}</h3>
+        {{ $state.Set "month" $month }}
+      {{ end }}
+      <a class="archives" href="{{ .RelPermalink }}">{{ .Title }}</a><br>
+    {{ end }}
+  </article>
+{{ end }}

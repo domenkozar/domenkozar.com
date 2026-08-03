@@ -1,0 +1,11 @@
+{{ define "body-class" }}{{ if eq .Section "posts" }}post-template{{ else }}page-template{{ end }}{{ end }}
+{{ define "main" }}
+  {{ if eq .Section "posts" }}
+    {{ partial "post.html" (dict "post" . "excerpt" false) }}
+  {{ else }}
+    <article class="post">
+      <header class="Post-header"><h1>{{ .Title }}</h1></header>
+      <section class="Post-content">{{ .Content }}</section>
+    </article>
+  {{ end }}
+{{ end }}

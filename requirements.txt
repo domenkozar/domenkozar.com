@@ -1,4 +1,0 @@
-Blogofile==0.7.1
-slugify
-Sphinx
-Markdown<3.0

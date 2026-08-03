@@ -1,0 +1,41 @@
+{{- $post := .post -}}
+{{- $excerpt := .excerpt -}}
+<article class="post">
+  <header class="Post-header">
+    <h1 class="title"><a name="{{ $post.Slug }}" href="{{ $post.RelPermalink }}" rel="bookmark" title="Permanent Link to {{ $post.Title }}">{{ $post.Title }}</a></h1>
+    <span class="meta">
+      <time datetime="{{ $post.Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ $post.Date.Format "02. Jan. 2006 at 15:04" }}</time>
+      {{ with $post.GetTerms "categories" }} under
+        {{- range $index, $category := . -}}
+          {{- if $index }}, {{ end -}}<a href="{{ $category.RelPermalink }}">{{ $category.LinkTitle | strings.FirstUpper }}</a>
+        {{- end -}}
+      {{ end }}
+    </span>
+  </header>
+
+  {{ if $excerpt }}
+    <section class="Post-excerpt"><p>{{ $post.Summary | plainify }}</p></section>
+  {{ else }}
+    <section class="Post-content">
+      {{ $post.Content }}
+
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_url = {{ $post.Permalink | jsonify | safeJS }};
+        var disqus_title = {{ $post.Title | jsonify | safeJS }};
+        var disqus_identifier = {{ $post.RelPermalink | jsonify | safeJS }};
+        var disqus_shortname = "domenkozar";
+      </script>
+      <script async src="https://domenkozar.disqus.com/embed.js"></script>
+      <noscript><a href="https://domenkozar.disqus.com/">View the discussion thread.</a></noscript>
+    </section>
+
+    <footer class="Post-footer">
+      <section class="Share">
+        <p>Share to:</p>
+        <a href="https://twitter.com/share?text={{ $post.Title | urlquery }}&amp;url={{ $post.Permalink | urlquery }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ $post.Permalink | urlquery }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">Facebook</a>
+      </section>
+    </footer>
+  {{ end }}
+</article>

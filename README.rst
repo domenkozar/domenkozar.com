@@ -3,12 +3,16 @@ Build
 
 ::
 
-    $ nix-build
+    $ devenv shell
+    $ build
 
 
-Generate pygments.css
----------------------
+Preview
+-------
 
 ::
 
-    pygmentize -f html -S monokai -a .highlight > pygments.css
+    $ devenv shell
+    $ serve
+
+The local site is available at http://localhost:1313/.
