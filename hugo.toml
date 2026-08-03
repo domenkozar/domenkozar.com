@@ -45,6 +45,7 @@ summaryLength = 75
 
 [params]
   description = "Domen Kožar's thoughts"
+  language = "en-US"
 
 [security.exec]
   allow = ["^rst2html$"]

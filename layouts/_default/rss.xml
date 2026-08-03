@@ -7,7 +7,7 @@
     <title>{{ .Title }}</title>
     <link>{{ .Permalink }}</link>
     <description>{{ site.Params.description }}</description>
-    <language>{{ site.Language.Locale }}</language>
+    <language>{{ site.Params.language }}</language>
     {{ range $pages }}
     <item>
       <title>{{ .Title }}</title>
