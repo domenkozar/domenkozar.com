@@ -114,7 +114,11 @@ disclose non-trivial automation.
 
 [Nixpkgs PR #534657](https://github.com/NixOS/nixpkgs/pull/534657) added one
 line telling coding agents to follow that policy, plus a `CLAUDE.md` symlink.
-It did not propose changing the policy itself.
+It did not propose changing the policy itself. Without that pointer, people
+using coding agents can submit changes without the tools ever seeing
+`CONTRIBUTING.md`, producing avoidable violations of the disclosure and human
+review rules. Reviewers then inherit the cleanup that a two-line repository
+change could have prevented.
 
 The pull request disclosed its assistance, and several contributors approved
 it. Then a reviewer used GitHub's blocking
