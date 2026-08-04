@@ -213,6 +213,15 @@ main {
   display: block;
   margin: 0 0 1rem; }
 
+.SiteInfobar-avatar {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border: 4px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  object-fit: cover; }
+
 .Title {
   color: #fd8586; }
 
