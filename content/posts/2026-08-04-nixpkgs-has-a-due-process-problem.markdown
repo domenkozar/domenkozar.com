@@ -5,6 +5,7 @@ date: 2026-08-04 09:00:00
 title: "nixpkgs has a due-process problem"
 draft: false
 slug: nixpkgs-has-a-due-process-problem
+description: "Three cases where Nixpkgs exercised power without clear rules: a commit-bit removal, a pull request closed by headcount, and a review blocked indefinitely."
 ---
 
 Nixpkgs has a due-process problem.
@@ -23,7 +24,7 @@ should be reviewed unusually carefully. I have also made bad merges.
 **The test of governance is not whether it gives me what I want. It is whether
 I would accept the same rules if the people and positions were reversed.**
 
-# Losing the commit bit
+## Losing the commit bit
 
 I contributed to Nix and NixOS for more than a decade, served as a release
 manager, and helped give Nixpkgs commit access to hundreds of contributors. On
@@ -93,7 +94,7 @@ second should require a written allegation, notice, a chance to respond,
 recusal for conflicts, agreement by several disinterested people, reasons, and
 an appeal.
 
-# Who decided?
+## Who decided?
 
 Nix is not a direct democracy. It has an elected
 [Steering Committee](https://nixos.org/community/teams/steering-committee/)
@@ -160,7 +161,13 @@ The closing comment relied on comments, reactions, and an informal Discourse
 poll. It called the contribution "slop" and "vibe-checked," and argued that
 "some kind of majority decision" was enough to reject it. It offered an appeal
 to the core team, but no published rule defined that majority, when an appeal
-applied, or what standard the core team would use.
+applied, or what standard the core team would use. The same comment urged
+anyone considering an appeal to first ask whether it would "really be in the
+best interest of the community." An appeal discouraged by the person whose
+decision it reviews is not much of a remedy. I did not appeal. I
+[replied on the pull request](https://github.com/NixOS/nixpkgs/pull/534657#issuecomment-5145035015)
+that the closure conflicted with the automation policy Nixpkgs had adopted
+and that the thread could not speak for the community.
 
 Nixpkgs aims for bottom-up consensus, but consensus is not a count of whoever
 shows up in a comment thread. Reactions and a voluntary poll can inform a
@@ -179,7 +186,7 @@ committer to convert informal feedback into a decision by "the community."
 **GitHub permissions answered who *could* close the pull request. They did not
 answer who had decided the policy question.**
 
-# When review becomes personal
+## When review becomes personal
 
 [Nixpkgs PR #535735](https://github.com/NixOS/nixpkgs/pull/535735) is the
 opposite kind of change. It patches glibc, updates patchelf, touches the
@@ -201,12 +208,12 @@ end](https://devenv.sh/blog/2026/06/26/making-devenv-start-fast-and-the-whole-ni
 That effort did not make the patch merge-ready or lower the review bar.
 
 One blocking review was explicitly preemptive. On June 26, the reviewer said
-they would need to reserve several hours to examine the change and that this
-would not happen for "the next few weeks," while using "Request Changes" to
+they would need to reserve "a bunch of hours" to examine the change and that
+this would not happen for "the next few weeks," while using "Request Changes" to
 [prevent an "overexcited committer" from merging it](https://github.com/NixOS/nixpkgs/pull/535735#pullrequestreview-4581645648).
 I [asked on July 12 when the review might happen](https://github.com/NixOS/nixpkgs/pull/535735#issuecomment-4949271240)
 and [again on July 25 after a month had passed](https://github.com/NixOS/nixpkgs/pull/535735#issuecomment-5079873068).
-By the time of writing, no detailed review or deadline had followed, and the
+As of this writing, no detailed review or deadline had followed, and the
 block remained. Nixpkgs permits an abandoned review to be dismissed, but does
 not say when a promised future review becomes abandoned.
 
@@ -241,16 +248,23 @@ questions and identify a maintainer" is a requirement.
 points to a specific unanswered question or maintenance risk. "Perhaps he wants
 something else" is merely a guess about motive.
 
-These cases differ in severity. In each, legitimate concerns became entangled
+These three cases differ in severity. In each, legitimate concerns became entangled
 with an exercise of authority whose basis, limits, or remedy were unclear.
 
-# The older problem
+## The older problem
 
 AI made this conflict visible, but did not create it.
 
+Jo Freeman's 1972 essay
+[The Tyranny of Structurelessness](https://www.jofreeman.com/joreen/tyranny.htm)
+described the same failure in the feminist movement. A group that refuses
+formal structure does not get rid of power. It hides power in informal elites
+and unwritten criteria that newcomers cannot see or appeal to. Freeman's fix
+was explicit delegation, defined authority, and accountability to the group.
+
 Other open-source projects put explicit constraints around power. The Apache
 Software Foundation says that
-[a veto without technical justification is invalid](https://www.apache.org/foundation/voting.html#Vetoes).
+[a veto without technical justification is invalid](https://www.apache.org/foundation/voting.html#Veto).
 Python's
 [conduct-enforcement procedure](https://policies.python.org/python.org/code-of-conduct/Enforcement-Procedures/)
 requires conflict checks, a two-thirds vote, a concrete plan, and
@@ -258,7 +272,7 @@ re-evaluation when the reported person responds. Rust provides
 [independent audits](https://rust-lang.github.io/rfcs/3392-leadership-council.html#audits)
 of visible sanctions and requires conflicted auditors to recuse themselves.
 Debian developers can
-[override delegated decisions](https://www.debian.org/devel/constitution#item-4.1),
+[override delegated decisions](https://www.debian.org/devel/constitution#item-4),
 while OpenStack requires
 [notice, discussion, quorum, and a recorded vote](https://governance.openstack.org/tc/reference/charter.html#motions)
 for governance motions.
@@ -273,7 +287,7 @@ maintainers not to make value judgments about one, and asks anyone who prefers
 another correct solution to submit that solution as a competing patch.
 Hintjens called review delay "change latency." He
 [warned that delaying and blocking patches gives maintainers power over
-contributors](https://hintjens.gitbooks.io/social-architecture/content/chapter4.html),
+contributors](https://web.archive.org/web/2023/https://hintjens.gitbooks.io/social-architecture/content/chapter4.html),
 even when the abuse is subconscious, and argued that a project whose
 maintainers cannot respond rapidly needs more hands.
 
@@ -295,7 +309,7 @@ The
 [2022 community survey](https://discourse.nixos.org/t/2022-nix-survey-results/18983)
 found that some respondents avoided opening pull requests because the backlog
 made timely review seem unlikely. In the
-[2025 survey](https://nixos.org/surveys/community/2025/#contributor-experience),
+[2025 survey](https://nixos.org/surveys/community/2025/#contribution_experience),
 7.0% reported slow feedback, 5.8% got stuck after starting, and 2.1% found
 feedback unhelpful or unclear. These categories overlap, and the survey does
 not attribute them specifically to nitpicking.
@@ -305,7 +319,7 @@ as a requirement without a rule, a concrete risk, or a stable condition for
 acceptance. If a mechanical rule matters enough to block a contribution, write
 it down and automate it. If it is merely a preference, call it a suggestion.
 
-# What should change
+## What should change
 
 Nixpkgs does not need ideological agreement. It needs rules strong enough for
 people who disagree to keep working together.
@@ -338,7 +352,7 @@ responsible, require disclosure, and reject unreviewed or poor work. Then judge
 compliant contributions against the stated technical rules. If Nixpkgs wants
 to ban LLM assistance, it should change the policy explicitly.
 
-Claims should be tested where possible. A vendor-neutral `AGENTS.md` proposal
+Fifth, test claims where possible. A vendor-neutral `AGENTS.md` proposal
 could include a before-and-after test: does it improve disclosure, checklist
 accuracy, test execution, and policy compliance? The policy itself could be
 reviewed using data about reverts, CI failures, review time, violations, and
