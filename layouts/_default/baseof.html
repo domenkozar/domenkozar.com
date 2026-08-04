@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ site.Title }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+    <meta name="theme-color" content="#17231f">
     {{ with site.Home.OutputFormats.Get "RSS" }}
       <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ .RelPermalink }}">
     {{ end }}
@@ -12,53 +13,47 @@
       <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ .RelPermalink }}">
     {{ end }}
     <link rel="stylesheet" href="/css/screen.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   </head>
   <body class="{{ block "body-class" . }}home-template{{ end }}">
-    <a href="https://github.com/domenkozar/domenkozar.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <a class="SkipLink" href="#main-content">Skip to content</a>
 
-    <aside class="SiteInfobar">
-      <a href="/" class="SiteInfobar-logo" aria-label="Home">
-        <img class="SiteInfobar-avatar" src="/images/me.png" alt="Domen Kožar" width="180" height="180">
-      </a>
-      <h2 class="Title">Domen Kožar's thoughts</h2>
-      <h6 class="Description"><a href="https://cachix.org/">Cachix</a> founder / <a href="https://nix.dev">Nix.dev</a> writer / <a href="https://weekly.nixos.org">NixOS Weekly</a> editor</h6>
+    <div class="SiteShell">
+      <aside class="SiteInfobar">
+        <div class="SiteInfobar-inner">
+          <header class="SiteIdentity">
+            <a href="/" class="SiteInfobar-logo" aria-label="Domen Kožar — home">
+              <img class="SiteInfobar-avatar" src="/images/me.png" alt="" width="180" height="180">
+            </a>
+            <div>
+              <p class="Eyebrow">Notes on technology &amp; life</p>
+              <p class="Title"><a href="/">Domen Kožar</a></p>
+            </div>
+          </header>
 
-      <section>
-        <a href="https://twitter.com/domenkozar" aria-label="Twitter"><span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-        </span></a>
-        &nbsp;
-        <a href="https://github.com/domenkozar" aria-label="GitHub"><span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i>
-        </span></a>
-        &nbsp;
-        <a href="mailto:domen@dev.si" aria-label="Email"><span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-        </span></a>
-      </section>
-    </aside>
+          <p class="Description">Building tools for better developer environments at <a href="https://cachix.org/">cachix.org</a>, <a href="https://secretspec.dev/">secretspec.dev</a>, and <a href="https://devenv.sh/">devenv.sh</a>.</p>
 
-    <main class="SiteContent" role="main">
-      {{ block "main" . }}{{ end }}
-    </main>
+          <nav class="SiteNav" aria-label="Primary navigation">
+            <a href="/"{{ if .IsHome }} aria-current="page"{{ end }}>Writing</a>
+            <a href="/about.html"{{ if eq .RelPermalink "/about.html" }} aria-current="page"{{ end }}>About</a>
+            <a href="/archives.html"{{ if eq .RelPermalink "/archives.html" }} aria-current="page"{{ end }}>Archive</a>
+          </nav>
 
-    <footer class="SiteFooter">
-      <section>
-        <span>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CCA 3.0 Unported License</a>.</span>
-      </section>
+          <div class="SocialLinks" aria-label="Elsewhere">
+            <a href="https://github.com/domenkozar">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://twitter.com/domenkozar">Twitter <span aria-hidden="true">↗</span></a>
+            <a href="mailto:domen@dev.si">Email <span aria-hidden="true">↗</span></a>
+          </div>
 
-      <script>
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-2515480-11']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      </script>
-    </footer>
+          <footer class="SiteFooter">
+            <p>Words shared under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+            <a class="SourceLink" href="https://github.com/domenkozar/domenkozar.com">View source <span aria-hidden="true">↗</span></a>
+          </footer>
+        </div>
+      </aside>
+
+      <main class="SiteContent" id="main-content">
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
   </body>
 </html>

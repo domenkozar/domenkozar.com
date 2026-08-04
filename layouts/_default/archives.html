@@ -1,21 +1,30 @@
 {{ define "body-class" }}archive-template{{ end }}
 {{ define "main" }}
-  <article class="post">
-    {{ $posts := where site.RegularPages "Section" "posts" }}
-    {{ $state := newScratch }}
-    {{ range $posts }}
-      {{ $year := .Date.Format "2006" }}
-      {{ $month := .Date.Format "January" }}
-      {{ if ne ($state.Get "year") $year }}
-        <h1>{{ $year }}</h1>
-        {{ $state.Set "year" $year }}
-        {{ $state.Set "month" "" }}
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+  <article class="post page--archives">
+    <header class="CollectionHeader">
+      <p class="Eyebrow">Since the beginning</p>
+      <h1>Archive</h1>
+      <p>{{ len $posts }} essays, notes, and experiments.</p>
+    </header>
+
+    <div class="Archive">
+      {{ range $posts.GroupByDate "2006" }}
+        <section class="Archive-year">
+          <header>
+            <h2>{{ .Key }}</h2>
+            <span>{{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}</span>
+          </header>
+          <ol>
+            {{ range .Pages }}
+              <li>
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02" }}</time>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ol>
+        </section>
       {{ end }}
-      {{ if ne ($state.Get "month") $month }}
-        <h3>{{ $month }}</h3>
-        {{ $state.Set "month" $month }}
-      {{ end }}
-      <a class="archives" href="{{ .RelPermalink }}">{{ .Title }}</a><br>
-    {{ end }}
+    </div>
   </article>
 {{ end }}

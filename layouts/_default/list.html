@@ -1,13 +1,19 @@
 {{ define "main" }}
   {{ if eq .Kind "term" }}
+    <header class="CollectionHeader">
+      <p class="Eyebrow">Filed under</p>
+      <h1>{{ .Title | strings.FirstUpper }}</h1>
+    </header>
     {{ $paginator := .Paginate .Pages }}
-    {{ range $paginator.Pages }}
-      {{ partial "post.html" (dict "post" . "excerpt" true) }}
-    {{ end }}
+    <div class="PostList">
+      {{ range $paginator.Pages }}
+        {{ partial "post.html" (dict "post" . "excerpt" true) }}
+      {{ end }}
+    </div>
     {{ partial "pagination.html" $paginator }}
   {{ else }}
-    <article class="post">
-      <header class="Post-header"><h1>{{ .Title }}</h1></header>
+    <article class="post page">
+      <header class="CollectionHeader"><h1>{{ .Title }}</h1></header>
       <section class="Post-content">
         <ul>
           {{ range .Pages.ByTitle }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}

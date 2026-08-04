@@ -1,8 +1,15 @@
 {{ define "main" }}
+  <header class="CollectionHeader">
+    <p class="Eyebrow">Latest</p>
+    <h1>Writing</h1>
+    <p>Essays and field notes on software, open source, communities, and the systems around them.</p>
+  </header>
   {{ $posts := where site.RegularPages "Section" "posts" }}
   {{ $paginator := .Paginate $posts }}
-  {{ range $paginator.Pages }}
-    {{ partial "post.html" (dict "post" . "excerpt" true) }}
-  {{ end }}
+  <div class="PostList">
+    {{ range $paginator.Pages }}
+      {{ partial "post.html" (dict "post" . "excerpt" true) }}
+    {{ end }}
+  </div>
   {{ partial "pagination.html" $paginator }}
 {{ end }}
