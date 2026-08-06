@@ -1,4 +1,9 @@
+{{- $hasLink := strings.Contains (printf "%s" .Text) "<a " -}}
 <h{{ .Level }} id="{{ .Anchor }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>
-  {{- .Text -}}
-  <a class="Heading-permalink" href="#{{ .Anchor }}" aria-label="Link to this section: {{ .PlainText }}">#</a>
+  {{- if $hasLink -}}
+    {{- .Text -}}
+    <a class="Heading-permalink Heading-permalink--hash" href="#{{ .Anchor }}" aria-label="Link to this section: {{ .PlainText }}"></a>
+  {{- else -}}
+    <a class="Heading-permalink" href="#{{ .Anchor }}">{{- .Text -}}</a>
+  {{- end -}}
 </h{{ .Level }}>
