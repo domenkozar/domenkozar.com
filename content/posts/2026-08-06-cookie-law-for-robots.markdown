@@ -106,10 +106,9 @@ are talking to a machine. You will click Continue. The institution operating it
 will have satisfied the disclosure rule, and nothing important will have
 changed.
 
-Open source projects are already
-[writing their own disclosure rules](/2026/07/23/llm-disclosure-is-becoming-the-new-cookie-banner/)
-for LLM-assisted contributions, and they meet the same difficulty. The label is
-easy to require. The judgment behind it is not.
+Open source projects writing disclosure rules for LLM-assisted contributions
+meet the same difficulty. The label is easy to require. The judgment behind it
+is not.
 
 The mistake is to confuse a visible ceremony with a change in power.
 
