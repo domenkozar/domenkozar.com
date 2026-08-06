@@ -426,6 +426,27 @@ img {
   font-size: 1.12rem;
 }
 
+.Post-content .Heading-permalink {
+  margin-left: 0.3em;
+  color: var(--muted);
+  font-size: 0.62em;
+  letter-spacing: 0;
+  opacity: 0;
+  text-decoration: none;
+  transition: color 160ms ease, opacity 160ms ease;
+  vertical-align: 0.1em;
+}
+
+.Post-content :is(h1, h2, h3, h4, h5, h6):hover .Heading-permalink,
+.Post-content .Heading-permalink:focus-visible {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.Post-content :is(h1, h2, h3, h4, h5, h6):target {
+  scroll-margin-top: 2rem;
+}
+
 .Post-content ul,
 .Post-content ol {
   padding-left: 1.35em;
@@ -446,6 +467,11 @@ img {
 
 .Post-content blockquote > * + * {
   margin-top: 0.75em;
+}
+
+.Post-embed--centered .twitter-tweet,
+.Post-embed--centered .twitter-tweet-rendered {
+  margin-inline: auto !important;
 }
 
 .Post-content hr {
