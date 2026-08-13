@@ -17,7 +17,7 @@ Following is a monthly update on my contributions to open source and community a
   which was completely **packed**. See videos on http://video.fosdem.org/2013/.
 
 - https://www.kiberpipa.org (our local hackerspace community) has a new website!
-  `@taveliki <https://twitter.com/taveliki>`_ decided old website was too old and useless,
+  `@taveliki <https://x.com/taveliki>`_ decided old website was too old and useless,
   so he started working on the redesign based on twitter.bootstrap. Main goal was to
   simplify the website and be responsive. This project took quite some of my free time and
   I'm really happy it's out there!
@@ -27,7 +27,7 @@ Following is a monthly update on my contributions to open source and community a
   Since twitter is disabling 1.0 API this month, I'm still waiting for
   `1.1 <https://github.com/bear/python-twitter/tree/api_v1.1>`_ branch to be merged.
 
-- `@garbas <https://twitter.com/garbas>`_ finally convinced me try `NixOS Linux distribution <http://nixos.org/>`_.
+- `@garbas <https://x.com/garbas>`_ finally convinced me try `NixOS Linux distribution <http://nixos.org/>`_.
   NixOS changes Linux packaging completely and obsoletes (sorry) your Linux sysadmin practices. It's very similar to
   `Puppet <https://puppetlabs.com/>`_, only that it renders configuration for your machine except trying
   to control your Linux distribution. Also similar to zc.buildout we use in Python world.

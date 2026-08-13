@@ -26,7 +26,7 @@ Last three weeks were pretty intense:
   I talked about `Tools for successful project development <https://ep2013.europython.eu/conference/talks/tools-for-successful-project-development>`_,
   had a `Plone CMS development training <https://ep2013.europython.eu/conference/talks/getting-started-with-plone-cms-development>`_ and hosted an open
   space about `NixOS declarative configuration Linux distribution <https://ep2013.europython.eu/conference/talks/nixos-operating-system-declarative-configuration-distribution>`_.
-  For the last two days of conference, I sprinted with `Balázs Reé <https://twitter.com/reebalazs>`_ on Substance D 
+  For the last two days of conference, I sprinted with `Balázs Reé <https://x.com/reebalazs>`_ on Substance D
 
 - Submitted `pull request <https://github.com/Pylons/substanced/pull/85>`_ where we completely change how we handle JavaScript in Substance D
 

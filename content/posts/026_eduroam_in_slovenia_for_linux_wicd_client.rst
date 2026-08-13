@@ -54,4 +54,4 @@ traffic. Here is full procedure how to get eduroam working with wicd:
 * **When configuring eduroam, select eap-ttls template and provide username, password, path to
   cacert.der and anonymous identity**
 
-PS: thanks to `@brodul <http://twitter.com/brodul>`_ for low level debugging of wpa_supplicant.
+PS: thanks to `@brodul <https://x.com/brodul>`_ for low level debugging of wpa_supplicant.

@@ -7,7 +7,7 @@ draft: false
 slug: sauna-sprint-2010-in-helsinki
 ---
 At last, so called `Sauna Sprint 2010 <http://plone.org/events/community/sauna-sprint-2010/>`_ has
-been announced. First of all, cheers to `Nejc <http://twitter.com/nzupan>`_ and Joni for all the
+been announced. First of all, cheers to `Nejc <https://x.com/nzupan>`_ and Joni for all the
 work done. 
 
 What is the story behind the Sauna Sprint? At the end of 2009, EESTEC IT team had a sprint at
