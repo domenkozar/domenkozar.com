@@ -22,16 +22,6 @@
   {{ else }}
     <section class="Post-content">
       {{ $post.Content }}
-
-      <div id="disqus_thread"></div>
-      <script>
-        var disqus_url = {{ $post.Permalink | jsonify | safeJS }};
-        var disqus_title = {{ $post.Title | jsonify | safeJS }};
-        var disqus_identifier = {{ $post.RelPermalink | jsonify | safeJS }};
-        var disqus_shortname = "domenkozar";
-      </script>
-      <script async src="https://domenkozar.disqus.com/embed.js"></script>
-      <noscript><a href="https://domenkozar.disqus.com/">View the discussion thread.</a></noscript>
     </section>
 
     <footer class="Post-footer">

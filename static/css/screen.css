@@ -579,12 +579,6 @@ kbd {
   font-weight: 700;
 }
 
-#disqus_thread {
-  margin-top: 4rem;
-  padding-top: 3rem;
-  border-top: 1px solid var(--line);
-}
-
 .Post-footer {
   margin-top: 3.5rem;
   padding-top: 1.5rem;
