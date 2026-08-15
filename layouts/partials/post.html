@@ -28,6 +28,9 @@
       <section class="Share">
         <p>Share this article</p>
         <div>
+          <a href="https://news.ycombinator.com/submitlink?u={{ $post.Permalink | urlquery }}&amp;t={{ $post.Title | urlquery }}" target="_blank" rel="noopener noreferrer">Hacker News</a>
+          <a href="https://lobste.rs/stories/new?url={{ $post.Permalink | urlquery }}&amp;title={{ $post.Title | urlquery }}" target="_blank" rel="noopener noreferrer">Lobsters</a>
+          <a href="https://www.reddit.com/submit?url={{ $post.Permalink | urlquery }}&amp;title={{ $post.Title | urlquery }}" target="_blank" rel="noopener noreferrer">Reddit</a>
           <a href="https://x.com/intent/tweet?text={{ $post.Title | urlquery }}&amp;url={{ $post.Permalink | urlquery }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=420');return false;">X</a>
           <a href="mailto:?subject={{ $post.Title | urlquery }}&amp;body={{ $post.Permalink | urlquery }}">Email</a>
         </div>
