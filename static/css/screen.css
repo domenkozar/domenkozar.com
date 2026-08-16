@@ -400,7 +400,8 @@ img {
 .Post-content h4,
 .Post-content h5,
 .Post-content h6 {
-  max-width: 24ch;
+  width: 100%;
+  max-width: none;
   margin-top: 2.2em;
   color: var(--ink);
   font-family: var(--sans);
@@ -427,6 +428,8 @@ img {
 }
 
 .Post-content .Heading-permalink {
+  display: block;
+  width: 100%;
   color: inherit;
   text-decoration: none;
 }

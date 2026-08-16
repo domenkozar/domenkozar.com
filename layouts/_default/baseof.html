@@ -31,7 +31,7 @@
     {{ with site.Home.OutputFormats.Get "ATOM" }}
       <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ .RelPermalink }}">
     {{ end }}
-    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="stylesheet" href="/css/screen.css?v=20260815-1">
   </head>
   <body class="{{ block "body-class" . }}home-template{{ end }}">
     <a class="SkipLink" href="#main-content">Skip to content</a>
