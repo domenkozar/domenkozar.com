@@ -92,3 +92,21 @@ Ten million 5 kWh batteries would create 50 GWh of distributed storage and
 electricity each year.
 
 **[EUROMAXXING.](https://eu-acc.com/)**
+
+## Edits
+
+There are two more reasons the economics are better than the calculation above.
+
+First, a battery can lower the fixed part of the bill too. The STREAM 5000's
+peak shaving detects a surge and discharges automatically to keep grid draw
+below a limit. In markets such as Spain, this can let you contract less maximum
+power and pay a lower fixed capacity charge; Spain's
+[CNMC](https://www.cnmc.es/va/node/406175) confirms that this charge depends on
+contracted power. The reduction must fit the battery's permitted grid-tied
+output and available charge, or the grid limit can still trip.
+
+Second, it is a plug-in battery. The basic grid-connected setup plugs into an
+existing grounded wall socket, avoiding a separate electrician or installation
+bill. Higher-power input or output is a different configuration: EcoFlow says
+that requires a certified professional, and installing a compatible whole-home
+meter may also add a cost.
