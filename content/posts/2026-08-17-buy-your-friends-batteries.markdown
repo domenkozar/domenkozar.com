@@ -1,0 +1,91 @@
+---
+categories: ["english", "energy"]
+author: Domen Kožar
+date: 2026-08-17 09:00:00
+title: "Buy Your Friends Batteries"
+draft: false
+slug: buy-your-friends-batteries
+description: "Pool your money and give your friends batteries that lower their electricity bills and keep essential devices running during outages."
+---
+
+Your next group birthday gifts should be home batteries.
+
+Most birthday gifts are forgotten within a year. Batteries save your friends
+money every day and keep essential devices running when the power goes out.
+
+A 5 kWh battery costs about €1,600. That is expensive for one person and easy
+for a group:
+
+- eight people contribute €200 each;
+- sixteen people contribute €100 each;
+- thirty-two people contribute €50 each.
+
+Create a battery birthday club. Buy each friend a battery on their birthday
+until everyone has one.
+
+The idea is simple: buy electricity when it is cheap, store it, and use it
+when it is expensive. Automatic price optimization reads tomorrow's prices
+and handles the schedule for you.
+
+The [EcoFlow STREAM 5000](https://eu.ecoflow.com/products/stream-series-solar-battery)
+is one current example: about €1,600 for 5 kWh of storage and up to 3 kW of
+output.
+
+Germany and Spain are good places to do this. In the second half of 2025, the
+average household electricity price was €0.3869/kWh in Germany and €0.2669/kWh
+in Spain, including taxes. Those averages hide large changes during each day.
+
+I calculated what would have happened on every day of 2025. The battery buys
+5 kWh during the four cheapest hours before 17:00 and delivers 4.5 kWh during
+the four most expensive evening hours. That assumes 90% round-trip efficiency
+and only runs the battery when the cycle is profitable.
+
+| Country | Average cheap price | Average expensive price | Average saving per day | Saving in 2025 | €1,600 payback |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Germany | €0.041/kWh | €0.133/kWh | €0.40 | €144 | 11.1 years |
+| Spain | €0.026/kWh | €0.106/kWh | €0.34 | €126 | 12.7 years |
+
+The calculation is:
+
+**daily saving = 4.5 × expensive price − 5 × cheap price**
+
+The table uses the market-linked part of a dynamic tariff, based on German
+[SMARD](https://www.smard.de/en) and Spanish
+[OMIE](https://www.omie.es/en/market-results/daily/daily-market/day-ahead-price)
+day-ahead prices. Your bill also contains supplier charges, network fees, and
+taxes. Some are fixed and some depend on time and location, so you should run
+the same calculation against your actual tariff. The national household price
+comparison comes from
+[Eurostat](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260505-1).
+
+Grid arbitrage alone is therefore useful, but not yet an automatic five-year
+payback. The economics improve when the same battery also stores your solar
+power, earns grid-service payments, or replaces electricity bought at the full
+retail price.
+
+You are also safer during a power outage. The STREAM 5000 provides up to 3 kW
+of off-grid output. Keep essential devices on its backup output and reserve
+some battery capacity, and your refrigerator, lights, router, and laptop can
+keep running when the grid goes down. An ordinary grid connection does not
+back up the whole house automatically; the backup output must be configured
+correctly.
+
+A battery also decouples when electricity is produced from when it is used.
+Spain can save abundant midday solar for the evening. Germany can save wind
+power produced during low demand for the next peak. More low-carbon energy can
+be used instead of wasted simply because it arrived at the wrong hour.
+
+## Do this
+
+1. Pick the friends with upcoming birthdays.
+2. Confirm that their home, meter, and electricity contract are compatible.
+3. Collect €50–€200 from each person.
+4. Buy a battery with automatic tariff integration.
+5. Configure price optimization and keep 20% available for outages.
+6. Repeat for the next birthdays.
+
+Ten million 5 kWh batteries would create 50 GWh of distributed storage and
+30 GW of output. At one cycle per day, they could move about 16 TWh of
+electricity each year.
+
+**[EUROMAXXING.](https://eu-acc.com/)**
