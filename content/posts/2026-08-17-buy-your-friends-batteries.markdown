@@ -70,6 +70,9 @@ keep running when the grid goes down. An ordinary grid connection does not
 back up the whole house automatically; the backup output must be configured
 correctly.
 
+And when the neighborhood goes dark but their lights stay on, they will
+remember who gave them the battery.
+
 A battery also decouples when electricity is produced from when it is used.
 Spain can save abundant midday solar for the evening. Germany can save wind
 power produced during low demand for the next peak. More low-carbon energy can
