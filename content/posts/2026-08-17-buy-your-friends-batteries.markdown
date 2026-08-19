@@ -95,18 +95,36 @@ electricity each year.
 
 ## Edits
 
-There are two more reasons the economics are better than the calculation above.
+1. A battery can lower the fixed part of the bill too. The STREAM 5000's peak
+   shaving detects a surge and discharges automatically to keep grid draw below
+   a limit. In markets such as Spain, this can let you contract less maximum
+   power and pay a lower fixed capacity charge; Spain's
+   [CNMC](https://www.cnmc.es/va/node/406175) confirms that this charge depends
+   on contracted power. The reduction must fit the battery's permitted grid-tied
+   output and available charge, or the grid limit can still trip.
 
-First, a battery can lower the fixed part of the bill too. The STREAM 5000's
-peak shaving detects a surge and discharges automatically to keep grid draw
-below a limit. In markets such as Spain, this can let you contract less maximum
-power and pay a lower fixed capacity charge; Spain's
-[CNMC](https://www.cnmc.es/va/node/406175) confirms that this charge depends on
-contracted power. The reduction must fit the battery's permitted grid-tied
-output and available charge, or the grid limit can still trip.
+2. It is a plug-in battery. The basic grid-connected setup plugs into an
+   existing grounded wall socket, avoiding a separate electrician or
+   installation bill. Higher-power input or output is a different configuration:
+   EcoFlow says that requires a certified professional, and installing a
+   compatible whole-home meter may also add a cost.
 
-Second, it is a plug-in battery. The basic grid-connected setup plugs into an
-existing grounded wall socket, avoiding a separate electrician or installation
-bill. Higher-power input or output is a different configuration: EcoFlow says
-that requires a certified professional, and installing a compatible whole-home
-meter may also add a cost.
+3. California does not allow this yet.
+   [Senate Bill 868](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB868),
+   the Plug and Play Solar Act, would exempt a "portable solar generation
+   device" from interconnection requirements: up to 1,200 watts through an
+   ordinary socket. It passed the Senate 35 to 1 and the Assembly has until
+   31 August 2026 to pass it. The exemption is written around photovoltaic
+   generation, so a battery only qualifies with a panel attached, and a
+   [10 watt panel](https://www.newpowa.com/10w-monocrystalline-12v-solar-panel/)
+   costs $26.
+
+4. Germany's law machine also has to catch up. The plug-in solar rules do not
+   cover a battery you charge from the grid, and households outside the
+   mandatory smart meter rollout cannot get hourly metering cheaply.
+   [Petition 177835](https://epetitionen.bundestag.de/petitionen/_2025/_02/_13/Petition_177835.nc.html)
+   asked for both. The
+   [coalition programme](https://www.pv-magazine.de/2026/07/02/koalitionsausschuss-verteilnetzausbau-beschleunigen-smart-meter-light-aber-kein-wort-zum-eeg/)
+   of 2 July 2026 promises a cheap "Smart Meter Light", and the
+   [EEG 2027 draft](https://www.pv-magazine.de/2026/03/10/geleakter-eeg-entwurf-vereinfachungen-bei-stecksolargeraeten-mit-speicher-geplant/)
+   covers a battery only behind the same inverter. Right direction, no date.
