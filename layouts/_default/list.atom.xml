@@ -14,7 +14,7 @@
     <id>{{ .Permalink }}</id>
     <link href="{{ .Permalink }}"/>
     <updated>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</updated>
-    <summary type="html">{{ .Summary | transform.XMLEscape }}</summary>
+    <summary type="html">{{ .Summary | transform.XMLEscape | safeHTML }}</summary>
     {{ range .Params.categories }}<category term="{{ . }}"/>{{ end }}
   </entry>
   {{ end }}
